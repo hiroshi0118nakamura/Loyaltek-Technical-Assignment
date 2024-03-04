@@ -4,7 +4,7 @@ import { Navigate, Route, Routes, BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import { PATH } from "consts";
-import { DashboardPage, NotFoundPage } from "pages";
+import { DashboardPage, MyCardPage, NotFoundPage } from "pages";
 import { AppActions, RootState } from "store";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -24,6 +24,7 @@ function App() {
       {loading ? <Spin /> : null}
       <Routes>
         <Route path={PATH.DASHBOARD} element={<DashboardPage />} />
+        <Route path={PATH.MYCARD} element={<MyCardPage />} />
         <Route path={PATH.NOT_FOUND} element={<NotFoundPage />} />
         <Route
           path={PATH.INVALID_PATH}
