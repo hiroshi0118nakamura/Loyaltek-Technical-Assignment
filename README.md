@@ -33,3 +33,8 @@ To facilitate this search, I customized a reusable **Autocomplete component** an
   Implemented responsive interface design for various kinds of screen sizes(Desktop, laptop, tablet, mobile)
 - Dark Mode
   Implemented Dark Theme and Light Theme using React toggle dark mode library for improving user experience
+
+## Deploy
+
+Deployed on vercel this project.
+Please visit here: [https://loyaltek-technical-assignment.vercel.app/](https://loyaltek-technical-assignment.vercel.app/)
