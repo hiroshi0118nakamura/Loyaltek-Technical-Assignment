@@ -13,7 +13,7 @@ export default function Switcher() {
     const root = window.document.documentElement;
     root.classList.remove(colorTheme);
     root.classList.add(theme);
-    dispatch(AppActions.screen.changeDarkMode());
+    dispatch(AppActions.screen.changeDarkMode(theme));
   }, [theme, colorTheme]);
   const [darkSide, setDarkSide] = useState(
     colorTheme === "light" ? true : false

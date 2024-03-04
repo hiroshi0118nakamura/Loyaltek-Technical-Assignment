@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface IScreenState {
   navbarState: boolean;
@@ -17,8 +17,8 @@ const screenSlice = createSlice({
     changeState(state: IScreenState) {
       state.navbarState = !state.navbarState;
     },
-    changeDarkMode(state: IScreenState) {
-      state.darkMode = state.darkMode === "dark" ? "light" : "dark";
+    changeDarkMode(state: IScreenState, actions: PayloadAction<string>) {
+      state.darkMode = actions.payload;
     },
   },
 });
